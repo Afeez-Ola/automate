@@ -1,4 +1,4 @@
-import pandas as p
+import pandas
 
 x_list = [-73.0, 256.0, -55.0, -119.0, 69.0, -179.0, 5.0, 313.0, -12.0, -186.0, -46.0, -184.0, -223.0, -85.0, -104.0,
 170.0, -112.0, 58.0, -62.0, -15.0, -82.0, -314.0, -136.0, -270.0, -363.0, -39.0, -201.0, -367.0, -255.0,
@@ -13,6 +13,6 @@ states = ['Abia', 'Adamawa', 'Akwa Ibom', 'Anambra', 'Bauchi', 'Bayelsa', 'Benue
 'Sokoto', 'Taraba', 'Yobe', 'Zamfara']
 
 data = {"state": states, "x": x_list, "y": y_list}
-data_table = pd.DataFrame(data=data)
+data_table = pandas.DataFrame(data=data)
 data_table.to_csv("state.csv")
 
